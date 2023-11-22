@@ -33,3 +33,10 @@ Opción 2:
 c:\temp> find /v /c "" archivo.txt
 ---------- ARCHIVO.TXT: 41525
 ```
+
+Opción 3: En Windows, puedes contar los saltos de línea (número de líneas) de un archivo usando PowerShell
+
+```sh
+# Contar saltos de línea en un archivo
+(Get-Content -Path "archivo.txt" | Measure-Object -Line).Lines
+```
